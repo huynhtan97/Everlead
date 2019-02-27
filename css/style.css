@@ -1,34 +1,55 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
-
+/* Custom Styling */
 p {
   line-height: 2rem;
 }
 
+
+/* Navbar */
+nav ul a,
+nav {
+  color: #ffffff;
+}
+/* Sidenav on mobile */
 .sidenav-trigger {
-  color: #26a69a;
+  color: #ffffff;
+}
+#nav-mobile li a {
+  color:#0097a7;
 }
 
+/* index banner */
 .parallax-container {
   min-height: 380px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
+.parallax-container h1{
+  font-weight: 500;
+}
 
+/* For Values */
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+/* Social Media Chips */
+.chip:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer.page-footer {
+  margin: 0;
+  width: 100%;
+}
+
+/* What happens when on ipads */
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -37,21 +58,22 @@ p {
   #index-banner .section {
     top: 10%;
   }
+  #index-banner h1{
+    font-size: 60px;
+  }
+  .nav-wrapper a img{
+    width: 70%;
+  }
 }
-
+/* What happens when on mobile */
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
+  #index-banner h1{
+    font-size: 40px;
+  }
+  .nav-wrapper a img{
+    width: 60%;
+  }
 }

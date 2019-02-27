@@ -1,8 +1,17 @@
+// Enter needed js code here!
 (function($){
   $(function(){
 
     $('.sidenav').sidenav();
     $('.parallax').parallax();
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  });
+})(jQuery); 
+
+$(document).ready(function(){
+  $('.scrollspy').scrollSpy();
+});
+
+$(document).ready(function(){
+  $('.carousel').carousel();
+});
